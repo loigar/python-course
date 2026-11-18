@@ -11,5 +11,5 @@ async function loadChapter(fileName){
 }
 
 loadChapter(
-    "capitulo_1_atrapa_las_estrellas.md"
+    "capitulo_0_introduccion.md"
 );
