@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;700&display=swap');
+
+:root{
+    --bg:#151b3b;
+    --panel:#20295f;
+    --yellow:#ffd93d;
+    --green:#7eff7e;
+    --orange:#ff9f43;
+    --pink:#ff69b4;
+    --text:#ffffff;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    background:var(--bg);
+    color:white;
+    font-family:Nunito,sans-serif;
+}
+
+.topbar{
+    background:#111633;
+    padding:20px;
+    text-align:center;
+    border-bottom:4px solid var(--yellow);
+}
+
+.topbar h1{
+    font-family:'Press Start 2P';
+    font-size:1.2rem;
+    color:var(--yellow);
+}
+
+.layout{
+    display:flex;
+    min-height:calc(100vh - 90px);
+}
+
+.sidebar{
+    width:320px;
+    background:var(--panel);
+    padding:20px;
+}
+
+.sidebar h2{
+    color:var(--yellow);
+}
+
+.sidebar button{
+    width:100%;
+    margin-bottom:12px;
+    border:none;
+    border-radius:12px;
+    padding:16px;
+    cursor:pointer;
+    font-weight:bold;
+    background:var(--orange);
+    color:white;
+}
+
+.sidebar button:hover{
+    transform:scale(1.03);
+}
+
+#content{
+    flex:1;
+    padding:40px;
+    background:#131933;
+}
+
+#content h1,
+#content h2{
+    color:var(--yellow);
+}
+
+#content img{
+    max-width:100%;
+    border-radius:15px;
+    border:4px solid white;
+}
+
+pre{
+    background:#101010;
+    padding:20px;
+    border-left:8px solid #4fc3f7;
+    overflow:auto;
+    border-radius:12px;
+}
+
+code{
+    font-family:Consolas, monospace;
+}
+
+blockquote{
+    background:#24316b;
+    padding:15px;
+    border-left:6px solid var(--green);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+td,th{
+    border:1px solid white;
+    padding:10px;
+}
+
+@media(max-width:900px){
+
+    .layout{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+    }
+
+}
